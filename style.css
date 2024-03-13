@@ -6,12 +6,12 @@ body {
   
   h1 {
     text-align: center;
-    color: #333;
+    color: #da4444;
   }
   
   #question {
-    background-color: #f57424;
-    color: #fff;
+    background-color: #92e837;
+    color: #d86329;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -44,7 +44,7 @@ body {
   }
   
   #options button:hover {
-    background-color: #f57424;
+    background-color: #92e837;
   }
   
   #btn {
@@ -56,7 +56,7 @@ body {
   
   #next {
     display: inline-block;
-    background-color: #0084ff;
+    background-color: #31b528;
     color: #fff;
     border: none;
     border-radius: 20px;
