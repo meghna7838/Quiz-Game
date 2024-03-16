@@ -25,7 +25,8 @@ const questionObj =
     questionEl.innerHTML = question;
     //We can also use text content here instead of html.
 
-    options.forEach((opt) => {
+    const shuffledOption = shuffleOptions(options);
+    shuffledOption.forEach((opt) => {
       const btn = document.createElement("button");
       btn.textContent = opt;
       optionEl.appendChild(btn);
@@ -47,3 +48,13 @@ const questionObj =
       });
     });
     
+//Function for shuffling 
+function shuffleOptions(options){
+  for(let i=options.length-1;i>=0;i--)
+  {
+    j =Math.floor(Math.random()*i+1);
+
+    [options[i],options[j]] = [options[j],options[i]];
+  }
+  return options;
+}
